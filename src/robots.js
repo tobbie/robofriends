@@ -64,6 +64,12 @@ export const robots = [
         name: 'Clementine Bauch',
         username: 'Samantha',
         email: 'Nathan@yesenia.net'
+    },
+    {
+      id : 12,
+      name : 'Temitope Akinseye',
+      email : 'awopetu3@gmail.com'
+
     }
   ];
   
