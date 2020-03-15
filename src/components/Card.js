@@ -1,8 +1,6 @@
-import React, {Component} from 'react'
+import React from 'react'
 
-class Card extends Component{
-    render(){
-        const {name, email , id } = this.props;
+const Card  = ({name, email, id})=> {
         return(
             <div className='bg-light-green dib br3 pa3 ma2 grow tc bw2 shadow-5'>
                 <img alt='robot' src={`https://robohash.org/${id}?200X200`}></img>
@@ -12,7 +10,7 @@ class Card extends Component{
                 </div>
             </div>
         );
-    }
+    
 }
 
 export default Card;
