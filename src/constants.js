@@ -5,4 +5,6 @@ const action_constants = {
     REQUEST_ROBOTS_FAILED : 'REQUEST_ROBOTS_FAILED'
 }
 
-export default action_constants;
+const ROBOTS_URL = 'https://jsonplaceholder.typicode.com/users';
+
+export  {action_constants, ROBOTS_URL};

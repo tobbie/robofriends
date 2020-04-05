@@ -1,4 +1,4 @@
-import action_constants from './constants'
+import {action_constants} from './constants'
 
 
 
