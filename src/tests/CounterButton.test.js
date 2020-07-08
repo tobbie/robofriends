@@ -7,7 +7,8 @@ describe('counter button tests',()=> {
     
 
     it('expect to render counter button component',() => {
-        wrapper = shallow(<CounterButton />)
+        const mockColor = 'red';
+        wrapper = shallow(<CounterButton color = {mockColor} />)
         expect(wrapper).toMatchSnapshot();
         
         
