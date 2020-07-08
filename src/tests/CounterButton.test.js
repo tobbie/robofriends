@@ -1,30 +1,21 @@
-import {shallow} from 'enzyme'
-import React from 'react'
-import CounterButton from '../components/CounterButton'
+import { shallow } from "enzyme";
+import React from "react";
+import CounterButton from "../components/CounterButton";
 
-describe('counter button tests',()=> {
-    let wrapper;
-    
+describe("counter button tests", () => {
+  let wrapper;
 
-    it('expect to render counter button component',() => {
-        const mockColor = 'red';
-        wrapper = shallow(<CounterButton color = {mockColor} />)
-        expect(wrapper).toMatchSnapshot();
-        
-        
-    });
+  it("expect to render counter button component", () => {
+    const mockColor = "red";
+    wrapper = shallow(<CounterButton color={mockColor} />);
+    expect(wrapper).toMatchSnapshot();
+  });
 
-    it('expect to render counter to increment',() => {
-        wrapper = shallow(<CounterButton />)
-        wrapper.find('[id="ctrButton"]').simulate('click');
-        expect(wrapper.state()).toEqual({count: 1})
-        wrapper.find('[id="ctrButton"]').simulate('click');
-        expect(wrapper.state()).toEqual({count:2})
-        
-        
-    });
-
-
-
-
-})
+  it("expect to render counter to increment", () => {
+    wrapper = shallow(<CounterButton />);
+    wrapper.find('[id="ctrButton"]').simulate("click");
+    expect(wrapper.state()).toEqual({ count: 1 });
+    wrapper.find('[id="ctrButton"]').simulate("click");
+    expect(wrapper.state()).toEqual({ count: 2 });
+  });
+});
