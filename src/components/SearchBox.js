@@ -1,8 +1,8 @@
 import React from 'react'
 
-const SearchBox = ({searchField, searchChange}) => {
-  
+const SearchBox = ({searchChange}) => {
     return(
+      
   <div>
       <input 
       aria-label='Search Robots'
